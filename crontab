@@ -1,0 +1,7 @@
+# Add this to your crontab (edit your crontab by typing 'crontab -e' in your terminal)
+# Edit the lines below to point to your specific scripts. 1 script needed for each different mp3
+# Notice the /var/log/ that sends logs and errors to the same log file. See readme for more info
+
+0 9 * * * /usr/bin/python3 /usr/bin/vlc /home/pi/music/auto/SONG_NAME.py > /var/log/mp3_calendar.log 2>&1
+0 16 * * * /usr/bin/python3 /usr/bin/vlc /home/pi/music/auto/SONG_NAME2.py > /var/log/mp3_calendar.log 2>&1
+0 21 * * * /usr/bin/python3 /usr/bin/vlc /home/pi/music/auto/SONG_NAME3.py > /var/log/mp3_calendar.log 2>&1
