@@ -9,10 +9,12 @@ sure if this needs tweaking in relation to the correct user/root/session/environ
 I received the following tip but don't know what to do with it:
 "You also might be able to set the PATH for the cronjobs by putting 
 something like this above it: PATH=/bin:/usr/bin:/usr/local/bin "
+Source: https://bit.ly/36VKBx7
 
 I received the following tip but don't know how to do it:
 "Check the PATH in cron’s shell. Python3 may be in username,"pi"s PATH, 
 but possibly not in cron’s PATH"
+Source: https://bit.ly/3u4e6pr
 
 ************* SCRIPT *************
 
@@ -25,7 +27,8 @@ Make a log under /var/log/log_name.log (DONE)
 chmod log_name.log (664) (DONE)
 Add this to the end of your cronjob line > /var/log/goodbye.log 2>&1 (DONE)
 Go through your script and place prints through the execution flow (HOW?)
-Set it to run every 5 minutes (*/5 * * * *) then check results
+Set it to run every 5 minutes (*/5 * * * *) then check results (DONE - but no results being logged yet)
+Source: https://bit.ly/3J1gTDX
 
 
 ************ ENVIRONMENT / SESSION / USER ID etc ****************
