@@ -9,3 +9,7 @@ Play the national anthem on your country's special day.
 Play "the last call" at 11am on 11th Nov every year. 
 
 You get the idea. 
+
+LOGGING ERRORS
+
+I will add info for how to log each execution of this script including errors. It involves creating a specific log file, then chmodding it and then telling the crontab file to log activity to that file
