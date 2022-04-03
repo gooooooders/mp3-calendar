@@ -1,1 +1,1 @@
-0 9 * * * /usr/bin/python3 /usr/bin/vlc /home/pi/music/auto/SONG_NAME.py > /var/log/mp3_calendar.log 2>&1
+0 9 * * * /usr/bin/python3 /usr/bin/vlc /home/pi/music/auto/the_script.py > /var/log/mp3_calendar.log 2>&1
