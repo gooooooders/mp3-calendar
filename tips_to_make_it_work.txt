@@ -1,1 +1,57 @@
+IT DOESN'T WORK YET so here are the tips I've received from helpful 
+internet strangers to help me get the project up and running
+
+************* CRONTAB *************
+
+Use full paths to VLC, to python (/usr/bin/python3), and to the script (DONE but not 
+sure if this needs tweaking in relation to the correct user/root/session/environment)
+
+I received the following tip but don't know what to do with it:
+"You also might be able to set the PATH for the cronjobs by putting 
+something like this above it: PATH=/bin:/usr/bin:/usr/local/bin "
+
+I received the following tip but don't know how to do it:
+"Check the PATH in cron’s shell. Python3 may be in username,"pi"s PATH, 
+but possibly not in cron’s PATH"
+
+************* SCRIPT *************
+
+Plays the mp3 successfully when ran from the command line
+
+
+************* LOGGING *************
+
+Make a log under /var/log/log_name.log (DONE)
+chmod log_name.log (664) (DONE)
+Add this to the end of your cronjob line > /var/log/goodbye.log 2>&1 (DONE)
+Go through your script and place prints through the execution flow (HOW?)
+Set it to run every 5 minutes (*/5 * * * *) then check results
+
+
+************ ENVIRONMENT / SESSION / USER ID etc ****************
+
+Here's a promising tip I don't yet know how to implement:
+"It's probably one of the environmentals that gets set properly in your normal 
+user session that is not getting properly configured in the cron environment, 
+hence the sound playing audibly during your manual invocations while running 
+but not being audible via cron (that process is being invoked but the output 
+is just misdirected). Edit: it's probably not this exact environmental, 
+though it may be, I suspect it's something very close to what's explained here: 
+https://bit.ly/35BAI7b
+
+Cont'd:
+Reading up a little more on that variable it wouldn't surprise me if that is 
+indeed the one you need to set for cron, just make sure the uid of the user 
+matches the directory name/#, you can set/export the setting for that 
+variable in your cron command like:
+0 5 * * * export VARIABLE=whatever /path/to/python3 /path/to/script.py
+
+
+
+************* MISC *************
+
+I've tested the sound output with the 'speaker-test -c' command
+The mp3 plays successfully when running the script manually from command line
+I'm using Raspberry Pi 400 via SSH on Mac Terminal
+
 
