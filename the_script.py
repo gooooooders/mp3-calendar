@@ -7,4 +7,5 @@ p.play()
 while True:
     pass
 
+logging.basicConfig(level=logging.ERROR, file='/var/log/goodbye.log')
 logging.warn('message')
