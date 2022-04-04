@@ -1,1 +1,2 @@
-0 9 * * * /usr/bin/python3 /usr/bin/vlc /home/pi/music/auto/the_script.py > /var/log/mp3_calendar.log 2>&1
+*/2 * * * * /usr/bin/python3 /usr/bin/vlc /home/pi/music/auto/goodbye.py > /var/log/goodbye.log 2>&1
+*/2 * * * * /usr/bin/python3 /usr/bin/vlc /usr/bin/deleteme.py > /var/log/test.log 2>&1
