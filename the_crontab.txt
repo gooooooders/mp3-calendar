@@ -1,2 +1,1 @@
-*/2 * * * * /usr/bin/python3 /usr/bin/vlc /home/pi/music/auto/goodbye.py > /var/log/goodbye.log 2>&1
-*/2 * * * * /usr/bin/python3 /usr/bin/vlc /usr/bin/deleteme.py > /var/log/test.log 2>&1
+*/2 * * * * /usr/bin/python3 XDG_RUNTIME_DIR=/run/user/1000 /usr/bin/vlc /home/pi/music/auto/goodbye.py > /var/log/goodbye.log 2>&1
