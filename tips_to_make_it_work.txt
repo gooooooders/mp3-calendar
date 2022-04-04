@@ -49,7 +49,8 @@ matches the directory name/#, you can set/export the setting for that
 variable in your cron command like:
 0 5 * * * export VARIABLE=whatever /path/to/python3 /path/to/script.py
 
-
+Use this answer to insert User_id to get it working
+https://stackoverflow.com/questions/42497130/audio-doesnt-play-with-crontab-on-raspberry-pi
 
 ************* MISC *************
 
